@@ -17,9 +17,9 @@ public class App {
         frame.setResizable(false);
 
         // Setup JPanel untuk game
-        PacMan pacmanGame = new PacMan();
-        pacmanGame.setPreferredSize(new Dimension(boardWidth, boardHeight));
-        frame.add(pacmanGame);
+        RunGirl rungirlGame = new RunGirl();
+        rungirlGame.setPreferredSize(new Dimension(boardWidth, boardHeight));
+        frame.add(rungirlGame);
 
         // Pack dan hitung dekorasi
         frame.pack(); // Hitung ukuran optimal
@@ -35,6 +35,6 @@ public class App {
         frame.setVisible(true);
 
         // Fokus ke panel game
-        pacmanGame.requestFocusInWindow();
+        rungirlGame.requestFocusInWindow();
     }
 }
